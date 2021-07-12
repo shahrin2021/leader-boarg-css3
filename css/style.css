@@ -1,0 +1,369 @@
+/* *******************
+    UNIVERSEL CSS 
+********************** */
+ body{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     background-color: #E5E5E5;
+ }
+
+
+.container{
+    max-width: 870px;
+    margin: 0 auto;
+    padding: 30px;
+   
+    
+}
+
+.container-bg-color{
+    background-color: #FFFFFF;
+}
+
+.header-container{
+    padding: 0 30px;
+   
+}
+
+
+.container-index{
+    z-index: -1;
+}
+/* HEADER CSS*/
+
+header{
+    background-color: #562EFF;
+    margin-bottom: 35px;
+ 
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+.header-nav-logo img{
+    width: 40px;
+    height: 50px;
+}
+.header-nav-logo a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+}
+.logo-text{
+    font-size: 30px ;
+    outline: none;
+    font-weight: 500;
+    margin-left: 5px;
+    color: #ffffff;
+}
+
+.header-nav-menu ul{
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-menu ul li{
+    list-style: none;
+}
+
+.header-nav-menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0 20px;
+    color:  #FFFFFF;
+}
+
+.header-nav-menu ul li a img{
+    width: 50px;
+    height: 50px;
+    border: 2px solid;
+    border-radius: 50%;
+    transition: border 2s ;
+}
+
+.header-nav-menu ul li a img:hover{
+    border: 2px solid #522EAF;
+}
+
+/*******************
+    HEADER CSS END
+***********************/
+
+/**************************
+  OUR TEAM SECTION
+*******************************/
+.our-team-section{
+    
+}
+.team-members{
+    display: flex;
+    align-items: center;
+}
+
+.team-member-image img{
+    width: 56px;
+    height: 56px;
+    margin-right: 16px;
+}
+
+.our-team-member{
+    display: grid;
+    grid-template-columns: repeat(3 ,  1fr);
+    grid-row-gap:29px ;
+}
+
+.title{
+    margin-top: 3px;
+    margin-bottom: 11px;
+    color: #562EFF;
+    
+}
+
+hr{
+    border: 1px solid #D1D1D1;
+    margin-top: 30px;
+
+}
+
+/* blog section css */
+
+.blog-thumnail img{
+    width: 177px;
+    height: 177px;
+}
+
+.blogs-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap:26px ;
+}
+
+.bolg{
+    display: flex;
+    /* align-items: center; */
+}
+
+.blog-details{
+    max-width: 197px;
+    margin-left: 16px;
+}
+
+.blog-details h3{
+    margin: 0;
+    font-size: 20px;
+}
+
+.blog-details p{
+    margin-top: 6px;
+    font-size: 16px;
+    color: #9F9F9F;
+}
+
+.blog-details p a{
+    color: #562EFF;
+    text-decoration: none;
+}
+
+
+/* course */
+
+.course-section{
+    margin-top: 35px;
+    padding-bottom: 30px;
+}
+
+.course-thumnail img{
+    width: 224px;
+    height: 105px;
+}
+
+.course-title h3{
+    margin-top: 16.3px;
+    margin-bottom: 7.17px;
+    max-width: 225px;
+}
+.course-items{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-column-gap: 25px;
+}
+
+.course{
+    background-color: #ffffff;
+    box-shadow: 3px 5px 13px 0 rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.course-details{
+    display: flex;
+    align-items: center;
+    margin-top: 19.17px;
+    justify-content: space-between;
+}
+
+.course-duration{
+    background-color: #FFE4E8;
+    width: 94px;
+    height: 30px;
+    line-height: 30px;
+    padding: 3px 7px;
+    border-radius: 20px;
+
+}
+
+.course-duration p{
+    margin: 0;
+    color: #ED6B4F;
+}
+
+.clock{
+    margin-right: 5px;  
+}
+
+.tutor{
+    font-size: 16px;
+    color: #ED6B4F;
+}
+
+.filled{
+    color: #FFC014;
+    font-size: 13px;
+}
+
+.unfilled{
+    color: #9F9F9F;
+    font-size: 13px;
+}
+
+
+
+/* media queries */
+
+@media(max-width:500px){
+    
+    .our-team-member{
+        display: grid;
+        grid-template-columns: repeat(1 ,  1fr);
+        grid-row-gap:29px ;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        
+    }
+
+    .header-nav-menu ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .team-members{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .bolg{
+        display: block;
+    }
+
+    .blogs-items{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap:26px ;
+       
+    }
+
+    .course-items{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+        grid-column-gap: 25px;
+    }
+
+    .course-title h3{
+        max-width: 100%;
+    }
+
+    .blog-details{
+        max-width: 100%;
+        margin-left: 16px;
+    }
+    
+}
+
+@media( min-width:500px) and (max-width:688px){
+    .our-team-member{
+        display: grid;
+        grid-template-columns: repeat(2 ,  1fr);
+        grid-row-gap:29px ;
+    }
+
+ 
+
+    .blogs-items{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap:26px ;
+       
+    }
+
+    .bolg{
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+    }
+
+    .course-items{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+        grid-row-gap: 26px;
+       
+    }
+
+    .course-title h3{
+        max-width: 100%;
+    }
+
+
+}
+
+
+/* tablate screen */
+
+@media( min-width:689px) and (max-width:991px){
+    .course-items{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        grid-row-gap: 26px;
+       
+    }
+
+    .blogs-items{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap:26px ;
+        justify-content: center;
+       
+    }
+
+    .bolg{
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+    }
+}
+
